@@ -13,16 +13,18 @@ const props = {
 
 describe('<Banner />', () => {
   it('should render correctly', () => {
-    renderWithTheme(<Banner {...props} />)
-    // verifique se o title existe renderizado (.toBeInTheDocument())
+    const { container } = renderWithTheme(<Banner {...props} />)
+   
     expect(
       screen.getByRole('heading', { name: /Defy death/i })
     ).toBeInTheDocument()
-    // verifique se o subtitle existe renderizado
+   
     expect(
       screen.getByRole('heading', { name: /Play the new CrashLands season/i })
     ).toBeInTheDocument()
-    // verifique se a imagem existe renderizado
+   
     expect(screen.getByRole('img', { name: /Defy death/i })).toBeInTheDocument()
+
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
