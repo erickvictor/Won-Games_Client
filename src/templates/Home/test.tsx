@@ -21,7 +21,7 @@ describe('<Home />', () => {
       screen.getByRole('heading', { name: /most popular/i })
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /upcoming/i })
+      screen.getByRole('heading', { name: /upcomming/i })
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: /free games/i })
