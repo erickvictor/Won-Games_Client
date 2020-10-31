@@ -50,7 +50,7 @@ export const Icon = styled.div<IconPositionProps>`
     color: ${theme.colors.gray};
     order: ${iconPosition === 'right' ? 1 : 0};
     & > svg {
-      width: 100%;
+      width: 2.2rem;
     }
   `}
 `
