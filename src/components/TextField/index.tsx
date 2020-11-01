@@ -42,6 +42,7 @@ const TextField = ({
           type="text"
           onChange={onChange}
           value={value}
+          iconPosition={iconPosition}
           disabled={disabled}
           {...props}
         />
