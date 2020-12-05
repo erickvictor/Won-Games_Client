@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
@@ -27,7 +27,7 @@ export const Content = styled.div`
 export const Block = styled.div``
 
 export const Label = styled.h3`
-  ${({theme}) => css`
+  ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.light};
     color: ${theme.colors.white};
@@ -39,5 +39,16 @@ export const Description = styled.p`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
     color: ${theme.colors.white};
+  `}
+`
+export const IconsWrapper = styled.div`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+  `}
+`
+
+export const Icon = styled.span`
+  ${({ theme }) => css`
+    margin-right: ${theme.spacings.xxsmall};
   `}
 `
