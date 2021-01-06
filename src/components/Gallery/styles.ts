@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
       margin: 0 ${theme.spacings.xsmall};
       cursor: pointer;
     }
-    
+
     .slick-list {
       margin: 0 -${theme.spacings.xsmall};
     }
@@ -41,5 +41,26 @@ export const Wrapper = styled.div`
     ${media.lessThan('huge')`
       overflow-x: hidden;
     `}
+  `}
+`
+
+type ModalProps = {
+  isOpen: boolean
+}
+
+const modalModifiers = {
+  open: () => css`
+    opacity: 1;
+  `,
+  close: () => css`
+    opacity: 0;
+    pointer-events: none;
+  `
+}
+
+export const Modal = styled.div<ModalProps>`
+  ${({ isOpen }) => css`
+    ${isOpen && modalModifiers.open()}
+    ${!isOpen && modalModifiers.close()}
   `}
 `
