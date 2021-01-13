@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     h5,
     h6 {
       color: ${theme.colors.white};
-      margin: ${theme.spacings.xsmall};
+      margin: ${theme.spacings.xsmall} 0;
       ${HeadingStyles.wrapperModifiers.lineLeft(theme, 'secondary')};
 
       ${media.greaterThan('medium')`
