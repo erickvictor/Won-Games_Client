@@ -28,6 +28,7 @@ jest.mock('components/Menu', () => ({
   }
 }))
 
+
 jest.mock('components/Gallery', () => ({
   __esModule: true,
   default: function Mock() {
