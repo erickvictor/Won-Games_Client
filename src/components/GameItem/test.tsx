@@ -13,16 +13,25 @@ describe('<GameItem />', () => {
   it('should render the item', () => {
     renderWithTheme(<GameItem {...props} />)
 
-    // verificar o title se foi renderizado
     expect(
       screen.getByRole('heading', { name: props.title })
     ).toBeInTheDocument()
-    // verificar a imagem
+
     expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
       'src',
       props.img
     )
-    // verificar o preço
+
     expect(screen.getByText('R$ 215,00')).toBeInTheDocument()
+  })
+
+  it('should render the item with download link', () => {
+    const downloadLink = 'https://link'
+
+    renderWithTheme(<GameItem {...props} downloadLink={downloadLink} />)
+
+    expect(
+      screen.getByRole('link', { name: `Get ${props.title} here` })
+    ).toHaveAttribute('href', downloadLink)
   })
 })
