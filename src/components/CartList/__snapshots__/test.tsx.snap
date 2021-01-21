@@ -73,6 +73,23 @@ exports[`<CartList /> should render the cart list 1`] = `
   align-self: start;
 }
 
+.c0 .sc-AxirZ {
+  padding-bottom: 3.2rem;
+}
+
+.c0 .sc-AxiKw {
+  max-width: 20rem;
+}
+
+.c0 .sc-AxhCb {
+  font-size: 1.8rem;
+}
+
+.c0 .sc-AxhUy {
+  color: #030517;
+  font-size: 1.6rem;
+}
+
 .c7 {
   background: #eee;
   color: #030517;
@@ -128,7 +145,7 @@ exports[`<CartList /> should render the cart list 1`] = `
   }
 }
 
-<main
+<div
   class="c0"
 >
   <div
@@ -203,5 +220,5 @@ exports[`<CartList /> should render the cart list 1`] = `
       R$ 330,00
     </span>
   </div>
-</main>
+</div>
 `;
