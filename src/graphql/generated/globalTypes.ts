@@ -7,13 +7,23 @@
 // START Enums and Input Objects
 //==============================================================
 
+export enum ENUM_COMPONENTPAGERIBBON_COLOR {
+  primary = "primary",
+  secondary = "secondary",
+}
+
+export enum ENUM_COMPONENTPAGERIBBON_SIZE {
+  normal = "normal",
+  small = "small",
+}
+
 export enum ENUM_GAME_RATING {
-  FREE = "FREE",
-  pegi12 = "pegi12",
-  pegi16 = "pegi16",
-  pegi18 = "pegi18",
-  pegi3 = "pegi3",
-  pegi7 = "pegi7",
+  BR0 = "BR0",
+  BR10 = "BR10",
+  BR12 = "BR12",
+  BR14 = "BR14",
+  BR16 = "BR16",
+  BR18 = "BR18",
 }
 
 //==============================================================
