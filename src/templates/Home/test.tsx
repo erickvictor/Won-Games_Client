@@ -12,10 +12,14 @@ import Home from '.'
 const props = {
   banners: bannersMock,
   newGames: gamesMock,
+  newGamesTitle: 'New Games',
   mostPopularHighlight: highlightMock,
+  mostPopularGamesTitle: 'Popular Games',
   mostPopularGames: gamesMock,
-  upcommingGames: gamesMock,
-  upcommingHighlight: highlightMock,
+  upcomingGamesTitle: 'Upcoming Games',
+  upcomingGames: gamesMock,
+  upcomingHighlight: highlightMock,
+  freeGamesTitle: 'Free Games',
   freeGames: gamesMock,
   freeHighlight: highlightMock
 }
