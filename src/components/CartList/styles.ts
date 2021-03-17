@@ -15,7 +15,8 @@ export const Wrapper = styled.div<WrapperProps>`
     flex-direction: column;
     align-self: start;
 
-    ${isEmpty && css`
+    ${isEmpty &&
+    css`
       ${EmptyStyles.Wrapper} {
         padding-bottom: ${theme.spacings.medium};
       }
@@ -33,6 +34,21 @@ export const Wrapper = styled.div<WrapperProps>`
         font-size: ${theme.font.sizes.medium};
       }
     `}
+  `}
+`
+
+export const Loading = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.white};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    min-width: 56rem;
+    svg {
+      height: 10rem;
+      width: 10rem;
+    }
   `}
 `
 
