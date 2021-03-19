@@ -13,7 +13,9 @@ describe('<ProfileMenu />', () => {
 
     expect(screen.getByRole('link', { name: /my cards/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /my orders/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /sign out/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /sign out/i })
+    ).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
   })
@@ -25,5 +27,5 @@ describe('<ProfileMenu />', () => {
       background: theme.colors.primary,
       color: theme.colors.white
     })
-  });
+  })
 })

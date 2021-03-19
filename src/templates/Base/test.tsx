@@ -2,6 +2,12 @@ import { render, screen } from 'utils/test-utils'
 
 import Base from '.'
 
+jest.mock('next-auth/client', () => ({
+  useSession: jest.fn(() => {
+    return [{ session: null }]
+  })
+}))
+
 jest.mock('components/Menu', () => {
   return {
     __esModule: true,
@@ -30,6 +36,8 @@ describe('<Base />', () => {
 
     expect(screen.getByTestId('Mock Menu')).toBeInTheDocument()
     expect(screen.getByTestId('Mock Footer')).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /heading/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /heading/i })
+    ).toBeInTheDocument()
   })
 })
