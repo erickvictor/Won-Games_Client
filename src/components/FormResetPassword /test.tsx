@@ -6,6 +6,7 @@ import { render, screen, waitFor } from 'utils/test-utils'
 
 import FormResetPassword from '.'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 let query = {}
 

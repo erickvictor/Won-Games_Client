@@ -40,6 +40,7 @@ const ExploreSidebar = ({
 
   useEffect(() => {
     onFilter(values)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [values])
 
   const handleRadio = (name: string, value: string | boolean) => {

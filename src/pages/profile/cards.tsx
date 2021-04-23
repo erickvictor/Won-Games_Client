@@ -8,7 +8,7 @@ import protectedRoutes from 'utils/protected-routes'
 export default function ProfileCards({ cards }: CardsListProps) {
   return (
     <Profile>
-      <CardsList cards={mockCards} />
+      <CardsList cards={cards} />
     </Profile>
   )
 }

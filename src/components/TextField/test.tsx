@@ -40,7 +40,11 @@ describe('<TextField />', () => {
   it('Changes its value when typing', async () => {
     const onInputChange = jest.fn()
     render(
-      <TextField onInputChange={onInputChange} label="TextField" name="TextField" />
+      <TextField
+        onInputChange={onInputChange}
+        label="TextField"
+        name="TextField"
+      />
     )
 
     const input = screen.getByRole('textbox')
@@ -98,7 +102,7 @@ describe('<TextField />', () => {
 
     expect(screen.getByText('Error message')).toBeInTheDocument()
 
-    // expect(container.firstChild).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('Is not accessible by tab when disabled', () => {
