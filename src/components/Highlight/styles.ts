@@ -24,7 +24,7 @@ const wrapperModifiers = {
     ${FloatImage} {
       justify-self: end;
     }
-  `,
+  `
 }
 
 export const Wrapper = styled.section<WrapperProps>`
@@ -41,7 +41,7 @@ export const Wrapper = styled.section<WrapperProps>`
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     ${media.greaterThan('medium')`
@@ -62,7 +62,7 @@ export const FloatImage = styled.img`
 
     ${media.greaterThan('medium')`
       height: 32rem;
-    `}    
+    `}
   `}
 `
 

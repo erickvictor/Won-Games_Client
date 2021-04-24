@@ -18,7 +18,7 @@ describe('<PaymentOptions />', () => {
 
     userEvent.click(screen.getByLabelText(/4325/))
     await waitFor(() => {
-      expect(screen.getByRole('radio', { name: /4325/  })).toBeChecked()
+      expect(screen.getByRole('radio', { name: /4325/ })).toBeChecked()
     })
   })
 

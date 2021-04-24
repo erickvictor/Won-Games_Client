@@ -24,12 +24,12 @@ export const wrapperModifiers = {
     font-size: ${theme.font.sizes.huge};
   `,
 
-  lineLeft: ( theme: DefaultTheme, lineColor: LineColors ) => css`
+  lineLeft: (theme: DefaultTheme, lineColor: LineColors) => css`
     padding-left: ${theme.spacings.xxsmall};
     border-left: 0.7rem solid ${theme.colors[lineColor]};
   `,
 
-  lineBottom: (theme: DefaultTheme, lineColor: LineColors ) => css`
+  lineBottom: (theme: DefaultTheme, lineColor: LineColors) => css`
     position: relative;
     margin-bottom: ${theme.spacings.medium};
 
@@ -49,7 +49,9 @@ export const Wrapper = styled.h2<HeadingProps>`
     color: ${theme.colors[color!]};
 
     ${lineLeft && wrapperModifiers.lineLeft(theme, lineColor!)}
-    ${lineBottom && wrapperModifiers.lineBottom(theme, lineColor!)}
-    ${!!size && wrapperModifiers[size](theme)}
+    ${lineBottom &&
+    wrapperModifiers.lineBottom(theme, lineColor!)}
+    ${!!size &&
+    wrapperModifiers[size](theme)}
   `}
 `

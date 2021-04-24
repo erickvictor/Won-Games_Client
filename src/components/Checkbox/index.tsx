@@ -26,7 +26,6 @@ const Checkbox = ({
     setChecked(status)
 
     !!onCheck && onCheck(status)
-    
   }
 
   return (

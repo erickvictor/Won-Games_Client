@@ -20,5 +20,5 @@ describe('<GameCardSlider />', () => {
     expect(screen.getByLabelText(/next games/i)).toHaveStyle({
       color: '#FAFAFA'
     })
-  });
+  })
 })

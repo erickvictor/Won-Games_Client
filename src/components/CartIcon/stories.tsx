@@ -5,8 +5,8 @@ export default {
   title: 'CartIcon',
   component: CartIcon,
   parameters: {
-    backgrounds: { 
-      default: 'won-dark' 
+    backgrounds: {
+      default: 'won-dark'
     }
   }
 } as Meta
@@ -14,6 +14,6 @@ export default {
 export const Default: Story = () => <CartIcon />
 export const withItems: Story = (args) => <CartIcon {...args} />
 
-withItems.args ={
+withItems.args = {
   quantity: 3
 }

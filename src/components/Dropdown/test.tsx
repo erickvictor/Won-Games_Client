@@ -44,5 +44,4 @@ describe('<Dropdown />', () => {
     expect(overlay).toHaveStyle({ opacity: 0 })
     expect(overlay!.getAttribute('aria-hidden')).toBe('true')
   })
-
 })

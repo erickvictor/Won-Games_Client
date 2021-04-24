@@ -26,6 +26,6 @@ export const IsInCart: Story<GameInfoProps & CartContextData> = (args) => (
   </div>
 )
 
-IsInCart.args= {
+IsInCart.args = {
   isInCart: () => true
 }

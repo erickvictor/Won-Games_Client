@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from 'utils/test-utils'
 import theme from 'styles/theme'
 
-
 import GameCard from '.'
 
 const props = {

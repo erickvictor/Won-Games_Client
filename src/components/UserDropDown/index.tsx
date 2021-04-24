@@ -9,7 +9,6 @@ import Link from 'next/link'
 import Dropdown from 'components/Dropdown'
 import * as S from './styles'
 
-
 export type UserDropdownProps = {
   username: string
 }

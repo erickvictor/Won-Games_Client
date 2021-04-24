@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event'
 
 describe('<CartButton />', () => {
   it('should render button to add and call the method if clicked', () => {
-    const cartProviderProps ={
+    const cartProviderProps = {
       ...CartContextDefaultValues,
       isInCart: () => false,
       addToCart: jest.fn()
@@ -21,7 +21,7 @@ describe('<CartButton />', () => {
   })
 
   it('should render button to remove and call the method if clicked', () => {
-    const cartProviderProps ={
+    const cartProviderProps = {
       ...CartContextDefaultValues,
       isInCart: () => true,
       removeFromCart: jest.fn()

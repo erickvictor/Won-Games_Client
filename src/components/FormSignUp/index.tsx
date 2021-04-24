@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import { signIn } from 'next-auth/client'
-import { AccountCircle, Email, ErrorOutline, Lock } from '@styled-icons/material-outlined'
+import {
+  AccountCircle,
+  Email,
+  ErrorOutline,
+  Lock
+} from '@styled-icons/material-outlined'
 
 import { FormWrapper, FormLink, FormLoading, FormError } from 'components/Form'
 import Button from 'components/Button'

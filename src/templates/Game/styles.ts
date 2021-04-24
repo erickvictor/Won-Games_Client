@@ -62,7 +62,6 @@ export const SectionDescription = styled(Section)`
       margin-top: ${theme.spacings.medium};
     }
   `}
-  
 `
 
 export const SectionGameDetails = styled(Section)``

@@ -32,5 +32,5 @@ describe('<OrdersList />', () => {
     render(<OrdersList />)
 
     expect(screen.getByTestId('Mock Empty')).toBeInTheDocument()
-  });
+  })
 })

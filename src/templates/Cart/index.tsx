@@ -32,11 +32,11 @@ const Cart = ({
           My cart
         </Heading>
 
-          <S.Content>
-            <CartList />
+        <S.Content>
+          <CartList />
 
-            <PaymentOptions cards={cards} handlePayment={handlePayment} />
-          </S.Content>
+          <PaymentOptions cards={cards} handlePayment={handlePayment} />
+        </S.Content>
 
         <Divider />
       </Container>

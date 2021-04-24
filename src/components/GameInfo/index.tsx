@@ -1,6 +1,4 @@
-import {
-  FavoriteBorder
-} from '@styled-icons/material-outlined'
+import { FavoriteBorder } from '@styled-icons/material-outlined'
 
 import Button from 'components/Button'
 import CartButton from 'components/CartButton'

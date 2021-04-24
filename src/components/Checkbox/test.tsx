@@ -6,7 +6,9 @@ import Checkbox from '.'
 
 describe('<Checkbox />', () => {
   it('should render with label', () => {
-    const { container } = render(<Checkbox label="checkbox label" labelFor="check" />)
+    const { container } = render(
+      <Checkbox label="checkbox label" labelFor="check" />
+    )
 
     expect(screen.getByRole('checkbox')).toBeInTheDocument()
     expect(screen.getByLabelText(/checkbox label/i)).toBeInTheDocument()
@@ -21,7 +23,9 @@ describe('<Checkbox />', () => {
   })
 
   it('should render with black label', () => {
-    render(<Checkbox label="checkbox label" labelFor="check" labelColor="black" />)
+    render(
+      <Checkbox label="checkbox label" labelFor="check" labelColor="black" />
+    )
 
     expect(screen.getByText(/checkbox label/i)).toHaveStyle({
       color: theme.colors.black

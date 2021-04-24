@@ -13,7 +13,7 @@ export default {
 
 export const Default: Story<EmptyProps> = (args) => <Empty {...args} />
 
-Default.args ={
+Default.args = {
   title: 'Your wishlist is empty',
   description: 'Games added to your wishlist will appear here',
   hasLink: true

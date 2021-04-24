@@ -8,13 +8,13 @@ import highlichtMock from 'components/Highlight/mock'
 const props = {
   games: gamesMock,
   recommendedHighlight: highlichtMock,
-  recommendedTitle: "You may like these games",
+  recommendedTitle: 'You may like these games',
   recommendedGames: gamesMock
 }
 
 jest.mock('templates/Base', () => ({
   __esModule: true,
-  default: function Mock({ children }: { children: React.ReactNode}) {
+  default: function Mock({ children }: { children: React.ReactNode }) {
     return <div data-testid="Mock Base">{children}</div>
   }
 }))

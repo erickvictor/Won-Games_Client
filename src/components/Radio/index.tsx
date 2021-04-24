@@ -26,9 +26,15 @@ const Radio = ({
 
   return (
     <S.Wrapper>
-      <S.Input id={labelFor} type="radio" value={value} onChange={onChange} {...props} />
+      <S.Input
+        id={labelFor}
+        type="radio"
+        value={value}
+        onChange={onChange}
+        {...props}
+      />
       {!!label && (
-        <S.Label labelColor={labelColor} htmlFor={labelFor} >
+        <S.Label labelColor={labelColor} htmlFor={labelFor}>
           {label}
         </S.Label>
       )}

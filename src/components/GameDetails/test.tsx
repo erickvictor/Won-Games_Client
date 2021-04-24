@@ -48,35 +48,35 @@ describe('<GameDetails />', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText(/Different Tales/i)).toBeInTheDocument()
-  });
+  })
 
   it('should render the publisher', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText(/Walktrough/i)).toBeInTheDocument()
-  });
+  })
 
   it('should render free rating when BR0', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText(/free/i)).toBeInTheDocument()
-  });
+  })
 
   it('should render free rating when BR18', () => {
     render(<GameDetails {...props} rating="BR18" />)
 
     expect(screen.getByText(/18\+/i)).toBeInTheDocument()
-  });
+  })
 
   it('should render the formated date', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText('Nov 21, 2020')).toBeInTheDocument()
-  });
+  })
 
   it('should render a list of genres', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText('Role-playing / Narrative')).toBeInTheDocument()
-  });
+  })
 })

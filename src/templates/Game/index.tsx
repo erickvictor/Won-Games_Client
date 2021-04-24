@@ -64,7 +64,7 @@ const Game = ({
       />
 
       <Showcase
-        title={recommendedTitle || "You may like these games"}
+        title={recommendedTitle || 'You may like these games'}
         games={recommendedGames}
       />
     </S.Main>
