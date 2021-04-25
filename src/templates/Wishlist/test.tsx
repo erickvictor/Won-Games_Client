@@ -1,3 +1,5 @@
+import 'session.mock'
+import 'match-media-mock'
 import { render, screen } from 'utils/test-utils'
 
 import Wishlist from '.'
@@ -27,7 +29,7 @@ jest.mock('components/Showcase', () => ({
 }))
 
 describe('<Wishlist />', () => {
-  it('should render the heading', () => {
+  it('should render correctly', () => {
     render(<Wishlist {...props} />)
 
     expect(
