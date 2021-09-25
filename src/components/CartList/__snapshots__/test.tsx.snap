@@ -96,14 +96,10 @@ exports[`<CartList /> should render the cart list 1`] = `
 }
 
 .c0 .sc-AxiKw {
-  max-width: 20rem;
-}
-
-.c0 .sc-AxhCb {
   font-size: 1.8rem;
 }
 
-.c0 .sc-AxhUy {
+.c0 .sc-AxhCb {
   color: #030517;
   font-size: 1.6rem;
 }
@@ -256,4 +252,4 @@ exports[`<CartList /> should render the cart list 1`] = `
     </span>
   </div>
 </div>
-`;
+`
