@@ -91,19 +91,6 @@ exports[`<CartList /> should render the cart list 1`] = `
   align-self: start;
 }
 
-.c0 .sc-AxirZ {
-  padding-bottom: 3.2rem;
-}
-
-.c0 .sc-AxiKw {
-  font-size: 1.8rem;
-}
-
-.c0 .sc-AxhCb {
-  color: #030517;
-  font-size: 1.6rem;
-}
-
 .c1 {
   max-height: 40rem;
   overflow-y: auto;
